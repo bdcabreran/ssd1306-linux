@@ -11,7 +11,7 @@ SRC_URI = " \
     git://github.com/bdcabreran/ssd1306-linux.git;protocol=https;branch=master \
 "
 # git rev-parse HEAD
-SRCREV = "bf886cd67ab4737557297dce01cdbceedc8e3e17"
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
