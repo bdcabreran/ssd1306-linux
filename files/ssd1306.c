@@ -205,7 +205,7 @@ uint8_t ssd1306_oled_horizontal_flip(struct ssd1306_dev *dev, uint8_t flip)
     return 0;
 }
 
-uint8_t ssd1306_oled_display_flip(struct ssd1306_dev *dev, uint8_t flip)
+uint8_t ssd1306_oled_invert_display(struct ssd1306_dev *dev, uint8_t flip)
 {
     uint8_t *data_buf = dev->data_buff;
     uint8_t ret = 0;
@@ -466,9 +466,9 @@ static ssize_t ssd1306_write(struct file *file, const char __user *buffer, size_
         ssd1306_oled_horizontal_flip(&dev->ssd1306, packet.data.payload.horizontal_flip.state);
     }
     break;
-    case SSD1306_CMD_DISPLAY_FLIP:
+    case SSD1306_INVERT_DISPLAY_CMD:
     {
-        ssd1306_oled_display_flip(&dev->ssd1306, packet.data.payload.display_flip.state);
+        ssd1306_oled_invert_display(&dev->ssd1306, packet.data.payload.display_flip.state);
     }
     break;
 
