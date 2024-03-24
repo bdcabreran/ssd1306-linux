@@ -57,7 +57,7 @@ typedef enum {
     SSD1306_CMD_INVALID,
     SSD1306_CMD_SET_ROTATE,         // Corresponds to ssd1306_oled_set_rotate
     SSD1306_CMD_HORIZONTAL_FLIP,    // Corresponds to ssd1306_oled_horizontal_flip
-    SSD1306_INVERT_DISPLAY_CMD,     // Corresponds to ssd1306_oled_invert_display
+    SSD1306_CMD_INVERT_DISPLAY,     // Corresponds to ssd1306_oled_invert_display
     SSD1306_CMD_CLEAR_SCREEN,       // Corresponds to ssd1306_oled_clear_screen
     SSD1306_CMD_DRAW_PIXEL,         // Corresponds to ssd1306_oled_draw_pixel
     SSD1306_CMD_DRAW_AREA,          // Corresponds to ssd1306_oled_draw_area
