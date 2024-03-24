@@ -4,7 +4,7 @@
 
 This repository contains the Linux device driver for the SSD1306 OLED display. The SSD1306 is a monochrome OLED display, popular for its simplicity and ease of use in various embedded systems and IoT projects. This driver enables interaction with the display at the kernel level, providing a foundation for higher-level applications to utilize its features via a user-space interface.
 
-![alt text](img/ssd1306.png)
+![alt text](img/ssd1306-img.png)
 
 ## Features
 
