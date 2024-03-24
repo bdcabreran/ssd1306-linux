@@ -13,7 +13,7 @@ SRC_URI = " \
 # git rev-parse HEAD
 SRCREV = "${AUTOREV}"
 
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/git/files"
 
 EXTRA_OEMAKE = "CC='${CC}' CFLAGS='${CFLAGS}' LDFLAGS='${LDFLAGS}'"
 
