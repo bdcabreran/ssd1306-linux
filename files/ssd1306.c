@@ -466,7 +466,7 @@ static ssize_t ssd1306_write(struct file *file, const char __user *buffer, size_
         ssd1306_oled_horizontal_flip(&dev->ssd1306, packet.data.payload.horizontal_flip.state);
     }
     break;
-    case SSD1306_INVERT_DISPLAY_CMD:
+    case SSD1306_CMD_INVERT_DISPLAY:
     {
         ssd1306_oled_invert_display(&dev->ssd1306, packet.data.payload.display_flip.state);
     }

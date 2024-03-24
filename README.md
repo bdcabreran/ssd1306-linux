@@ -67,7 +67,8 @@ The driver is configured to work with a specific I2C bus and address via the dev
 
 ## Usage
 
-The driver exposes a character device interface for user-space applications to interact with the display. Example operations include setting the display orientation, drawing pixels, and clearing the screen. For detailed usage instructions and examples, refer to the user-space application documentation available in [User-Level Application Repository](#).
+The driver exposes a character device interface for user-space applications to interact with the display. Example operations include setting the display orientation, drawing pixels, and clearing the screen. For detailed usage instructions and examples, refer to the user-space application documentation available in [SSD1306-Tool](https://github.com/bdcabreran/ssd1306-tool/tree/master) repository 
+
 
 ### Writing to the Device
 
@@ -86,13 +87,19 @@ Write operations to the device can be performed using the standard `write()` sys
 
 For higher-level control and to demonstrate the driver's capabilities, a separate user-level application is available. This application provides a convenient interface for interacting with the display, showcasing its functionalities through various demos and usage examples.
 
-The application can be found in a separate repository: [SSD1306 Display User Application](https://example.com)
+The application can be found in a separate repository: [SSD1306-Tool](https://github.com/bdcabreran/ssd1306-tool/tree/master)
 
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md) - see the LICENSE file for details.
 
+## Author
 
+**Bayron Cabrera**
+
+- **GitHub:** https://github.com/bdcabreran
+- **LinkedIn:** https://www.linkedin.com/in/bayron-cabrera-517821124/
+- **Email:** bayron.nanez@gmail.com
 
 ---
